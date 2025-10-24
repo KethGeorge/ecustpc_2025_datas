@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="12" short-name="ecustpc-2025-d-time-trouble" url="https://polygon.codeforces.com/p29yMp0/KethGeorge/ecustpc-2025-d-time-trouble">
+    <names>
+        <name language="english" value="Time Trouble"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>5</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Time_Trouble_Gen1 -n=1" method="generated"/>
+                <test cmd="Time_Trouble_Gen1 -n=10000" method="generated"/>
+                <test cmd="Time_Trouble_Gen2 -n=10000 test1" method="generated"/>
+                <test cmd="Time_Trouble_Gen2 -n=10000 test1 gen2" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Time_Trouble_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Time_Trouble_Checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Time_Trouble_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Time_Trouble_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Time_Trouble_Gen2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Time_Trouble_Gen2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Time_Trouble_validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Time_Trouble_validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/Time_Trouble_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>1</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Time_Trouble_validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Time_Trouble_validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/Time_Trouble_AC_hater.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_AC_hater.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/Time_Trouble_ACorTLE.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_ACorTLE.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/Time_Trouble_Correct2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_Correct2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Time_Trouble_Main_Correct.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_Main_Correct.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Time_Trouble_TLE.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_TLE.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Time_Trouble_WA_0.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_WA_0.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Time_Trouble_WA_1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_WA_1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Time_Trouble_WA_2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_WA_2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Time_Trouble_WA_3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Time_Trouble_WA_3.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="easy-no-for-if"/>
+        <tag value="greedy"/>
+    </tags>
+</problem>

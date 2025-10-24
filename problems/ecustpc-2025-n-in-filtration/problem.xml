@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="ecustpc-2025-m-in-filtration" url="https://polygon.codeforces.com/p2NAkif/KethGeorge/ecustpc-2025-m-in-filtration">
+    <names>
+        <name language="english" value="In Filtration"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>24</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="In_Filtration_Gen1 -tc=5 -tN=20 -nL=2 -nR=5 -rO=0 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=5 -tN=20 -nL=2 -nR=5 -rO=0 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=5 -tN=20 -nL=2 -nR=5 -rO=0 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=1 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=1 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=1 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=3 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=3 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10000 -tN=50000 -nL=3 -nR=10 -rO=3 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=20000 -tN=100000 -nL=5 -nR=20 -rO=2 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=20000 -tN=100000 -nL=5 -nR=20 -rO=2 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=20000 -tN=100000 -nL=5 -nR=20 -rO=2 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=100000 -tN=300000 -nL=1 -nR=5 -rO=2 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=100000 -tN=300000 -nL=1 -nR=5 -rO=2 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=100000 -tN=300000 -nL=1 -nR=5 -rO=2 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=3 -tN=300000 -nL=100000 -nR=100000 -rO=3 -tL=0 -tR=40" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=3 -tN=300000 -nL=100000 -nR=100000 -rO=3 -tL=41 -tR=95" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=3 -tN=300000 -nL=100000 -nR=100000 -rO=3 -tL=96 -tR=100" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10 -tN=300000 -nL=10000 -nR=100000 -rO=3 -tL=0 -tR=100 test20" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10 -tN=300000 -nL=10000 -nR=100000 -rO=3 -tL=0 -tR=100 test21" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=10 -tN=300000 -nL=10000 -nR=100000 -rO=3 -tL=0 -tR=40 test22" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=5000 -tN=300000 -nL=1 -nR=100 -rO=4 -tL=0 -tR=100 test23" method="generated"/>
+                <test cmd="In_Filtration_Gen1 -tc=1 -tN=100000 -nL=100000 -nR=100000 -rO=2 -tL=0 -tR=100 test23" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/In_Filtration_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/In_Filtration_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/In_Filtration_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/In_Filtration_Validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::nyesno.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/In_Filtration_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/In_Filtration_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>3</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/In_Filtration_Correct_syncfalse.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/In_Filtration_Correct_syncfalse.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/In_Filtration_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/In_Filtration_MainCorrect.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/In_Filtration_TLE_brute.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/In_Filtration_TLE_brute.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="rejected" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/In_Filtration_WA_clash.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/In_Filtration_WA_clash.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="rejected" testset="tests"/>
+                </extra-tags>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="greedy"/>
+        <tag value="implementation"/>
+        <tag value="sortings"/>
+    </tags>
+</problem>

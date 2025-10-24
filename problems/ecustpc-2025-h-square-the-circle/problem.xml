@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="ecustpc-2025-i-square-the-circle" url="https://polygon.codeforces.com/p2pPji8/KethGeorge/ecustpc-2025-i-square-the-circle">
+    <names>
+        <name language="english" value="Square the Circle"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>3000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>31</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=0" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=1" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=2" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=3" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=4" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=5" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=6" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=7" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=8" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=9" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=10" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=11" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=12" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=13" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=14" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=15" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=16" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=17" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=18" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=19" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=0 -seg=20" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test22" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test23" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test24" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test25" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test26" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test27" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test28" method="generated"/>
+                <test cmd="Square_The_Circle_Gen1 -type=1 -testcases=1000 test29" method="generated"/>
+                <test method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Square_The_Circle_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Square_The_Circle_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Square_The_Circle_Interactor.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Square_The_Circle_Interactor.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Square_The_Circle_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Square_The_Circle_Validator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/run.py" type="python.3"/>
+                <binary path="files/run.pys3" type="pythonx.3"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <interactor>
+            <source path="files/Square_The_Circle_Interactor.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="files/Square_The_Circle_Interactor.exe" type="exe.win32"/>
+        </interactor>
+        <validators>
+            <validator>
+                <source path="files/Square_The_Circle_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Square_The_Circle_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/Square_The_Circle_AC_hater_1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_AC_hater_1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Square_The_Circle_AC_hater_2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_AC_hater_2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Square_The_Circle_AC_hater_3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_AC_hater_3.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Square_The_Circle_AC_hater_4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_AC_hater_4.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Square_The_Circle_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Square_The_Circle_PE.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_PE.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Square_The_Circle_PE_2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_PE_2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Square_The_Circle_WA_TooMany.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_WA_TooMany.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Square_The_Circle_WA_TooMany2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_WA_TooMany2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Square_The_Circle_WA_low_line.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Square_The_Circle_WA_low_line.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="geometry"/>
+        <tag value="interactive"/>
+    </tags>
+</problem>

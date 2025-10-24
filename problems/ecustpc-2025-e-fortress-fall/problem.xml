@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="7" short-name="ecustpc-2025-f-fortress-fall" url="https://polygon.codeforces.com/p7ntFvD/KethGeorge/ecustpc-2025-f-fortress-fall">
+    <names>
+        <name language="english" value="Fortress Fall"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>25</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=1 -n=5 -lA=-10 -rA=10 -lX=-10 -rX=10 -lY=-10 -rY=10" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=20 -n=7 -lA=-100 -rA=100 -lX=-100 -rX=100 -lY=-100 -rY=100" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=300 -n=1000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=60 -n=5000 -lA=0 -rA=0 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=30 -n=8000 -lA=-1000000 -rA=1000000 -lX=0 -rX=0 -lY=0 -rY=0" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=50 -n=6000 -lA=1 -rA=1000000 -lX=-1000000 -rX=-1000000 -lY=-1000000 -rY=-1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=50 -n=6000 -lA=-1000000 -rA=-1 -lX=1000000 -rX=1000000 -lY=1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=40 -n=7000 -lA=-1000000 -rA=1000000 -lX=1000000 -rX=1000000 -lY=1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=30 -n=9000 -lA=-1000000 -rA=1000000 -lX=500000 -rX=1000000 -lY=-1000000 -rY=-100000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=30 -n=8500 -lA=-1000000 -rA=1000000 -lX=-500000 -rX=-100000 -lY=-1000000 -rY=-600000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=30 -n=7500 -lA=-50 -rA=50 -lX=500000 -rX=500000 -lY=500000 -rY=500000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=40 -n=6500 -lA=-1000000 -rA=1000000 -lX=0 -rX=0 -lY=777777 -rY=777777" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=40 -n=6500 -lA=-1000000 -rA=1000000 -lX=777777 -rX=777777 -lY=0 -rY=0" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=3 -n=100000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=3 -n=90000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=10000 -n=11 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=50000 -n=5 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=10000 -n=17 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=200 -n=5 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=3 -n=90000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000 test20" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=3 -n=90000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000 test21" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=3 -n=90000 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000 test22" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=100000 -n=2 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+                <test cmd="Fortress_Fall_Gen1 -tc=100000 -n=3 -lA=-1000000 -rA=1000000 -lX=-1000000 -rX=1000000 -lY=-1000000 -rY=1000000" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Fortress_Fall_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Fortress_Fall_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Fortress_Fall_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Fortress_Fall_Validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Fortress_Fall_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Fortress_Fall_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/Fortress_Fall_Correct.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_Correct.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Fortress_Fall_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Fortress_Fall_TLE_memset_bruteforce.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_TLE_memset_bruteforce.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Fortress_Fall_WA_interval_intersect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_WA_interval_intersect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Fortress_Fall_WA_overflow.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_WA_overflow.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Fortress_Fall_brute_force_3powern.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Fortress_Fall_brute_force_3powern.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="cases"/>
+        <tag value="greedy"/>
+        <tag value="sortings"/>
+    </tags>
+</problem>

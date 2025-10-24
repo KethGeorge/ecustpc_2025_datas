@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="7" short-name="ecustpc-2025-j-floating-point" url="https://polygon.codeforces.com/p6MD1AF/KethGeorge/ecustpc-2025-j-floating-point">
+    <names>
+        <name language="english" value="FLOATING POINT"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>20</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="FLOATING_POINT_Gen1 -tc=1" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen1 -tc=1000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=1000 -r=5000 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=5000 -r=25000 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=25000 -r=125000 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=125000 -r=500000 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=500000 -r=1000000 -s=1000000 Test8" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=500000 -r=1000000 -s=1000000 Test9" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen2 -l=500000 -r=1000000 -s=1000000 Test10" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=11 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=12 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=13 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=15 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=17 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen3 -n=19 -s=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen4 -n=1000000" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen4 -n=999999" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen4 -n=999990" method="generated"/>
+                <test cmd="FLOATING_POINT_Gen4 -n=983041" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/FLOATING_POINT_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/FLOATING_POINT_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/FLOATING_POINT_Gen2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Gen2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/FLOATING_POINT_Gen3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Gen3.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/FLOATING_POINT_Gen4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Gen4.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/FLOATING_POINT_Val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Val.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/FLOATING_POINT_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>1</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/FLOATING_POINT_Val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/FLOATING_POINT_Val.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/FLOATING_POINT_Correct_0.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_Correct_0.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/FLOATING_POINT_Correct_1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_Correct_1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/FLOATING_POINT_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/FLOATING_POINT_TLE.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_TLE.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/FLOATING_POINT_deepseek.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_deepseek.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/FLOATING_POINT_hater.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/FLOATING_POINT_hater.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="bitmasks"/>
+        <tag value="constructive algorithms"/>
+    </tags>
+</problem>

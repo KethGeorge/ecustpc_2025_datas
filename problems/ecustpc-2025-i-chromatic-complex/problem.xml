@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="1" short-name="ecustpc-2025-k-chromatic-complex" url="https://polygon.codeforces.com/p4WFSmZ/KethGeorge/ecustpc-2025-k-chromatic-complex">
+    <names>
+        <name language="english" value="Chromatic Complex"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>6000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>17</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=5 -size=0 -lr=20" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=0 -lr=0" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=0 -lr=20" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=0 -lr=40" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=0 -lr=60" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=0 -lr=80" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=1 -lr=0" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=1 -lr=20" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=1 -lr=40" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=1 -lr=60" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=100 -size=1 -lr=80" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=1 -size=2 -lr=0" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=1 -size=2 -lr=20" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=1 -size=2 -lr=40" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=1 -size=2 -lr=60" method="generated"/>
+                <test cmd="Chromatic_Complex_Gen1 -tc=1 -size=2 -lr=80" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Chromatic_Complex_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Chromatic_Complex_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Chromatic_Complex_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Chromatic_Complex_Validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Chromatic_Complex_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Chromatic_Complex_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>3</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/Chromatic_Complex_AC_GPT5.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_AC_GPT5.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Chromatic_Complex_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Chromatic_Complex_TLE_Dij.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_TLE_Dij.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Chromatic_Complex_TLE_c2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_TLE_c2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_cost_wrong.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_cost_wrong.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_cost_wrong2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_cost_wrong2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_dp_state.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_dp_state.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_no_solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_no_solution.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_normalBFS.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_normalBFS.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_only_s2g.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_only_s2g.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Chromatic_Complex_WA_wrongBFS.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Chromatic_Complex_WA_wrongBFS.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="0-1 bfs"/>
+        <tag value="bitmask-dp"/>
+        <tag value="dfs and similar"/>
+        <tag value="dp"/>
+        <tag value="graph theory"/>
+    </tags>
+</problem>

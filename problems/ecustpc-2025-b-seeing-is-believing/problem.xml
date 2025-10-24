@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="1" short-name="ecustpc-2025-o-seeing-is-believing" url="https://polygon.codeforces.com/p3HBYHT/KethGeorge/ecustpc-2025-o-seeing-is-believing">
+    <names>
+        <name language="english" value="Seeing is believing"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>23</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test method="manual"/>
+                <test cmd="Seeing_is_Believing_Gen1 test4" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test5" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test6" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test7" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test8" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test9" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test10" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test11" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test12" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test13" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test14" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test15" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test16" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test17" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test18" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test19" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test20" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test21" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test22" method="generated"/>
+                <test cmd="Seeing_is_Believing_Gen1 test23" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Seeing_is_Believing_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Seeing_is_Believing_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Seeing_is_Believing_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Seeing_is_Believing_Validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Seeing_is_Believing_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Seeing_is_Believing_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>3</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/Seeing_is_Believing_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Seeing_is_Believing_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="implementation"/>
+    </tags>
+</problem>

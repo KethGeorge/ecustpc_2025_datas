@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="4" short-name="ecustpc-2025-g-forest-path" url="https://polygon.codeforces.com/p7fSR3d/KethGeorge/ecustpc-2025-g-forest-path">
+    <names>
+        <name language="english" value="Forest Path"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>35</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Forest_Path_Gen1 -tc=200 -tN=600 -nl=3 -nr=4 2" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=200 -tN=600 -nl=3 -nr=4 3" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=200 -tN=600 -nl=3 -nr=4 4" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=200 -tN=600 -nl=3 -nr=4 5" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=200 -tN=600 -nl=3 -nr=4 6" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 7" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 8" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 9" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 10" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 11" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=80000 -tN=300000 -nl=3 -nr=5 12" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=80000 -tN=300000 -nl=3 -nr=5 13" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=80000 -tN=300000 -nl=3 -nr=5 14" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=80000 -tN=300000 -nl=3 -nr=5 15" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=80000 -tN=300000 -nl=3 -nr=5 16" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 17" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 18" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 19" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 20" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 21" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 22" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 23" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 24" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 25" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 26" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 27" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 28" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 29" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 30" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 31" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=100000 -tN=300000 -nl=3 -nr=5 32" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 33" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 34" method="generated"/>
+                <test cmd="Forest_Path_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 35" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Forest_Path_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Forest_Path_Checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Forest_Path_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Forest_Path_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Forest_Path_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Forest_Path_Validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/Forest_Path_Checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>2</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Forest_Path_Validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Forest_Path_Validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/Forest_Path_AC1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Forest_Path_AC1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Forest_Path_MainCorrect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Forest_Path_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/Forest_Path_TLE_n4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Forest_Path_TLE_n4.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Forest_Path_WA_not_consider_bip.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Forest_Path_WA_not_consider_bip.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="dp"/>
+        <tag value="dp-on-trees"/>
+        <tag value="graph theory"/>
+    </tags>
+</problem>

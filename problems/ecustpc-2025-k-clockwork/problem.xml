@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="11" short-name="ecustpc-2025-c-clockwork" url="https://polygon.codeforces.com/p3HLk0Q/KethGeorge/ecustpc-2025-c-clockwork">
+    <names>
+        <name language="english" value="Clockwork"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>36</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual"/>
+                <test cmd="Clockwork_Gen1 -tc=200 -tN=600 -nl=2 -nr=4 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=200 -tN=600 -nl=2 -nr=4 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=200 -tN=600 -nl=2 -nr=4 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=200 -tN=600 -nl=2 -nr=4 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=200 -tN=600 -nl=2 -nr=4 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=30 -tN=200 -nl=5 -nr=8 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=100000 -tN=300000 -nl=1 -nr=5 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=100000 -tN=300000 -nl=1 -nr=5 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=100000 -tN=300000 -nl=1 -nr=5 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=100000 -tN=300000 -nl=1 -nr=5 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=100000 -tN=300000 -nl=1 -nr=5 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=1000 -tN=300000 -nl=100 -nr=500 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=10 -tN=300000 -nl=10000 -nr=50000 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 -l=100" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 -l=75" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 -l=50" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 -l=25" method="generated"/>
+                <test cmd="Clockwork_Gen1 -tc=3 -tN=300000 -nl=100000 -nr=100000 -l=0" method="generated"/>
+                <test cmd="Clockwork_Gen2 -tc=100000 -tN=100000 -nl=1 -nr=5" method="generated"/>
+                <test cmd="Clockwork_Gen2 -tc=1000 -tN=300000 -nl=100 -nr=500" method="generated"/>
+                <test cmd="Clockwork_Gen2 -tc=10 -tN=300000 -nl=10000 -nr=50000" method="generated"/>
+                <test cmd="Clockwork_Gen2 -tc=3 -tN=300000 -nl=100000 -nr=100000" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Clockwork_Gen1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Clockwork_Gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Clockwork_Gen2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Clockwork_Gen2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/Clockwork_Val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Clockwork_Val.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Clockwork_Val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/Clockwork_Val.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/Clockwork_Correct.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Clockwork_Correct.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Clockwork_Fish.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Clockwork_Fish.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/Clockwork_Hater.cpp" type="cpp.g++17"/>
+                <binary path="solutions/Clockwork_Hater.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Clockwork_MainCorrect.cpp" type="cpp.g++17"/>
+                <binary path="solutions/Clockwork_MainCorrect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Clockwork_TLE_Brute_Force.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Clockwork_TLE_Brute_Force.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/Clockwork_WA_notIntersect.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Clockwork_WA_notIntersect.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/Clockwork_onsite.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/Clockwork_onsite.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="dp"/>
+        <tag value="greedy"/>
+    </tags>
+</problem>
